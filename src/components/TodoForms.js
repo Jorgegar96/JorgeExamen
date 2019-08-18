@@ -4,10 +4,10 @@ class TodoForms extends Component {
   constructor() {
     super();
     this.state = {
-      title: "",
-      responsible: "",
-      description: "",
-      priority: "low"
+      codigo: "",
+      para: "",
+      descripcion: "",
+      prioridad: "low"
     };
     this.handleInput = this.handleInput.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -36,39 +36,39 @@ class TodoForms extends Component {
             <div className="form-group">
               <input
                 type="text"
-                name="title"
+                name="codigo"
                 onChange={this.handleInput}
                 className="form-control"
-                placeholder="Title"
+                placeholder="Codigo"
               />
             </div>
             <div className="form-group">
               <input
                 type="text"
-                name="responsible"
+                name="para"
                 onChange={this.handleInput}
                 className="form-control"
-                placeholder="Responsible"
+                placeholder="Para"
               />
             </div>
             <div className="form-group">
               <input
                 type="text"
-                name="description"
+                name="descripcion"
                 onChange={this.handleInput}
                 className="form-control"
-                placeholder="Description"
+                placeholder="Descripcion"
               />
             </div>
             <div className="form-group">
               <select
-                name="priority"
+                name="prioridad"
                 className="form-control"
                 onChange={this.handleInput}
                 >
-                <option>low</option>
-                <option>medium</option>
-                <option>high</option>
+                <option>low - $0.00</option>
+                <option>medium - $9.99</option>
+                <option>high - $19.99</option>
               </select>
             </div>
             <button type="Submit" className="btn btn-primary">

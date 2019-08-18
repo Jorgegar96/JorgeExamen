@@ -8,7 +8,7 @@ class Navigation extends Component{
           {this.props.title}
 
           <span className="badge badge-pill badge-light ml-2">
-            {this.props.ntareas}
+            {this.props.npedidos}
           </span>
         </a>
       </nav>

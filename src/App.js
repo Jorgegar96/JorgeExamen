@@ -2,27 +2,27 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Navigation from "./components/Navigation";
-import { todos } from "./todos.json";
+import { pedidos } from "./pedidos.json";
 import TodoForms from "./components/TodoForms";
 import InfoCards from "./components/InfoCards";
-console.log(todos);
+console.log(pedidos);
 
 class App extends Component {
   constructor(){
     super();
     this.state = {
-      title: "Aplicacion de Tareas",
-      ntareas: todos.length,
-      todos
+      title: "Aplicacion de Pedidos",
+      npedidos: pedidos.length,
+      pedidos
     };
     this.handleAddTodo=this.handleAddTodo.bind(this);
     this.removeTodo=this.removeTodo.bind(this);
   }
 
   removeTodo(index){
-    if(window.confirm("Are you sure you want to delete de todo?")){
+    if(window.confirm("El pedido ha sido entregado?")){
       this.setState({
-        todos: this.state.todos.filter((todo, i)=>{
+        pedidos: this.state.pedidos.filter((pedido, i)=>{
           return i != index
         })
       })
@@ -30,25 +30,25 @@ class App extends Component {
 
   }
 
-  handleAddTodo(todo){
+  handleAddTodo(pedido){
     this.setState({
-      todos: [...this.state.todos, todo]
+      todos: [...this.state.pedidos, pedido]
     })
   }
 
   render(){
-    const todos = this.state.todos.map((todo,i) => {
+    const pedidos = this.state.pedidos.map((pedido,i) => {
       return (
         <div className="col-md-4" key={i}>
           <div className="card mt-4">
             <div className="card-header">
-              <h3>{todo.title}</h3>
+              <h3>{pedido.id_prod}</h3>
               <span className="badge badge-pill badge-danger ml-2">
-                { todo.priority }
+                { pedido.prioridad }
               </span>
             </div>
-            <p>{todo.description}</p>
-            <p><mark>{todo.responsible}</mark></p>
+            <p>{pedido.descripcion}</p>
+            <p><mark>{pedido.para}</mark></p>
             <div className="card-footer">
               <button
                 className="btn btn-danger"
@@ -64,7 +64,7 @@ class App extends Component {
       <div className="App">
 
 
-        <Navigation title= { this.state.title } ntareas= {this.state.ntareas} />
+        <Navigation title= { this.state.title } npedidos= {this.state.npedidos} />
         <div className="container bg-white">
           <h1>Pedidos en Linea</h1>
         </div>
@@ -74,7 +74,7 @@ class App extends Component {
 
 
             <TodoForms onAddTodo={this.handleAddTodo}/>
-            { todos }
+            { pedidos }
           </div>
         </div>
         <header className="App-header">
