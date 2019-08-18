@@ -31,6 +31,8 @@ class App extends Component {
   }
 
   handleAddTodo(pedido){
+    var data=JSON.stringify(this.state.pedidos);
+    localStorage.setItem('data',data);
     this.setState({
       pedidos: [...this.state.pedidos, pedido]
     })
