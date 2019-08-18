@@ -2,26 +2,26 @@
   "pedidos": [
     {
       "id_prod": "001",
-      "para": "Mark",
-      "description": "lorem impsum",
+      "para": "Eduardo Maradiaga",
+      "descripcion": "Radio Santa Lucia",
       "prioridad": "low - $0.00"
     },
     {
       "id_prod": "002",
-      "para": "Ryan",
-      "descripcion": "lorem impsum 2",
+      "para": "Jorge Garcia",
+      "descripcion": "Laptop Dell",
       "prioridad": "medium - $9.99"
     },
     {
       "id_prod": "229",
-      "para": "Joseph",
-      "descripcion": "lorem impsum 3",
+      "para": "Leonardo Mendoza",
+      "descripcion": "Gorros Nike",
       "prioridad": "high - $19.99"
     },
     {
       "id_prod": "3452",
-      "para": "Maria",
-      "descripcion": "lorem impsum 3",
+      "para": "Alex Guevara",
+      "descripcion": "Licuadora",
       "prioridad": "low - $9.99"
     }
   ]

@@ -32,7 +32,7 @@ class App extends Component {
 
   handleAddTodo(pedido){
     this.setState({
-      todos: [...this.state.pedidos, pedido]
+      pedidos: [...this.state.pedidos, pedido]
     })
   }
 
