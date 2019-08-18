@@ -18,11 +18,14 @@ class App extends Component {
   }
 
   removeTodo(index){
-    this.setState({
-      todos: this.state.todos.filter((todo, i)=>{
-        return i != index
+    if(window.confirm("Are you sure you want to delete de todo?")){
+      this.setState({
+        todos: this.state.todos.filter((todo, i)=>{
+          return i != index
+        })
       })
-    })
+    }
+
   }
 
   handleAddTodo(todo){
