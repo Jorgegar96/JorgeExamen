@@ -1,13 +1,9 @@
 import React, { Component } from "react";
-import { todos } from "../todos.json";
 import TodoForms from "./TodoForms";
 
 class InfoCards extends Component{
   constructor() {
     super();
-    this.state ={
-      todos
-    }
     this.removeTodo = this.removeTodo.bind(this);
   }
 

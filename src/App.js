@@ -16,6 +16,7 @@ class App extends Component {
       todos
     };
     this.handleAddTodo=this.handleAddTodo.bind(this);
+    this.removeTodo=this.removeTodo.bind(this);
   }
 
   removeTodo(index){
@@ -39,14 +40,6 @@ class App extends Component {
     const todos = this.state.todos.map((todo,i) => {
       return (
         <div className="col-md-4" key={i}>
-          <InfoCards
-            title={todo.title}
-            priority={ todo.priority }
-            description={todo.description}
-            responsible={todo.responsible}
-            index={i}
-            onRemoveTodo={this.removeTodo}
-          />
           <div className="card mt-4">
             <div className="card-header">
               <h3>{todo.title}</h3>
@@ -69,27 +62,23 @@ class App extends Component {
     })
     return (
       <div className="App">
-        <Navigation title= { this.state.title } ntareas= {this.state.ntareas} />
 
+
+        <Navigation title= { this.state.title } ntareas= {this.state.ntareas} />
+        <div className="container bg-white">
+          <h1>Pedidos en Linea</h1>
+        </div>
         <div className="container">
           <div className="row mt-4">
+          <img src={logo} className="App-logo" alt="logo" />
+
             <TodoForms onAddTodo={this.handleAddTodo}/>
             { todos }
           </div>
         </div>
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+
+
         </header>
       </div>
     );
