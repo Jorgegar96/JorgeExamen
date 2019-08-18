@@ -69,8 +69,9 @@ class App extends Component {
           <h1>Pedidos en Linea</h1>
         </div>
         <div className="container">
-          <div className="row mt-4">
           <img src={logo} className="App-logo" alt="logo" />
+          <div className="row mt-4">
+
 
             <TodoForms onAddTodo={this.handleAddTodo}/>
             { todos }
