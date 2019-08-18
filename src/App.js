@@ -4,6 +4,7 @@ import './App.css';
 import Navigation from "./components/Navigation";
 import { todos } from "./todos.json";
 import TodoForms from "./components/TodoForms";
+import InfoCards from "./components/InfoCards";
 console.log(todos);
 
 class App extends Component {
@@ -38,6 +39,14 @@ class App extends Component {
     const todos = this.state.todos.map((todo,i) => {
       return (
         <div className="col-md-4" key={i}>
+          <InfoCards
+            title={todo.title}
+            priority={ todo.priority }
+            description={todo.description}
+            responsible={todo.responsible}
+            index={i}
+            onRemoveTodo={this.removeTodo}
+          />
           <div className="card mt-4">
             <div className="card-header">
               <h3>{todo.title}</h3>

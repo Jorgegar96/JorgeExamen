@@ -22,7 +22,7 @@ class TodoForms extends Component {
   }
 
   handleSubmit(e) {
-    alert("sending...");
+    alert("Se agregara un nuevo elemento");
     e.preventDefault();
     this.props.onAddTodo(this.state);
     console.log("sending the data...");
