@@ -31,11 +31,12 @@ class App extends Component {
   }
 
   handleAddTodo(pedido){
-    var data=JSON.stringify(this.state.pedidos);
-    localStorage.setItem('data',data);
+
     this.setState({
       pedidos: [...this.state.pedidos, pedido]
     })
+    var data=JSON.stringify(this.state.pedidos);
+    localStorage.setItem('data',data);
   }
 
   render(){
@@ -56,7 +57,7 @@ class App extends Component {
                 className="btn btn-danger"
                 onClick={this.removeTodo.bind(this,i)}
               >
-                Delete
+                Entregado
               </button>
             </div>
           </div>

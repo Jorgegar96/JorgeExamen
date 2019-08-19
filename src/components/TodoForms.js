@@ -7,7 +7,7 @@ class TodoForms extends Component {
       codigo: "",
       para: "",
       descripcion: "",
-      prioridad: "low"
+      prioridad: "low - $0.00"
     };
     this.handleInput = this.handleInput.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
