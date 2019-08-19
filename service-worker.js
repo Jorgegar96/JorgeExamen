@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/JorgeExamen/precache-manifest.42cd2310638f9696d1fa0eddc4fa6ea0.js"
+  "/JorgeExamen/precache-manifest.03626b16e6f1f0cf9ecdab61d125b54b.js"
 );
 
 self.addEventListener('message', (event) => {
