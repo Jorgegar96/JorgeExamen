@@ -25,7 +25,6 @@ class TodoForms extends Component {
     alert("Se agregara un nuevo elemento");
     e.preventDefault();
     this.props.onAddTodo(this.state);
-    console.log("sending the data...");
   }
 
   render() {
@@ -36,7 +35,7 @@ class TodoForms extends Component {
             <div className="form-group">
               <input
                 type="text"
-                name="codigo"
+                name="id_prod"
                 onChange={this.handleInput}
                 className="form-control"
                 placeholder="Codigo"
