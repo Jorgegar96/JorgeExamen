@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/JorgeExamen/static/css/main.2ea4d2d8.chunk.css",
+    "main.js": "/JorgeExamen/static/js/main.eb3f1c35.chunk.js",
+    "main.js.map": "/JorgeExamen/static/js/main.eb3f1c35.chunk.js.map",
+    "runtime~main.js": "/JorgeExamen/static/js/runtime~main.2c575f1f.js",
+    "runtime~main.js.map": "/JorgeExamen/static/js/runtime~main.2c575f1f.js.map",
+    "static/js/2.4a3defef.chunk.js": "/JorgeExamen/static/js/2.4a3defef.chunk.js",
+    "static/js/2.4a3defef.chunk.js.map": "/JorgeExamen/static/js/2.4a3defef.chunk.js.map",
+    "index.html": "/JorgeExamen/index.html",
+    "precache-manifest.c6aa0031ea7b07efe36e0807c53d0ecd.js": "/JorgeExamen/precache-manifest.c6aa0031ea7b07efe36e0807c53d0ecd.js",
+    "service-worker.js": "/JorgeExamen/service-worker.js",
+    "static/css/main.2ea4d2d8.chunk.css.map": "/JorgeExamen/static/css/main.2ea4d2d8.chunk.css.map",
+    "static/media/logo.svg": "/JorgeExamen/static/media/logo.5d5d9eef.svg"
+  }
+}
