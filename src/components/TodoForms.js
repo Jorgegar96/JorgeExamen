@@ -4,7 +4,7 @@ class TodoForms extends Component {
   constructor() {
     super();
     this.state = {
-      codigo: "",
+      id_prod: "",
       para: "",
       descripcion: "",
       prioridad: "low - $0.00"
